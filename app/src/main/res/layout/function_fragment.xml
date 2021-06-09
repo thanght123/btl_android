@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/xin_chao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/xin_chao"
+                android:textColor="#FF9800"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/daubep"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp">
+                </ImageView>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/goi_mon"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#FF9800"
+                        android:text="Gọi Món"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></Button>
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/sua_mon"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#FF9800"
+                        android:text="Sửa Món"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></Button>
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/thanh_toan"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#FF9800"
+                        android:text="Thanh Toán"
+                        android:textAllCaps="true"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></Button>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
